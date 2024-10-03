@@ -1,0 +1,64 @@
+.data
+Prompt1: .asciiz "$a1 contains: "
+Prompt2: .asciiz "\n$a2 contains: "
+Return: .asciiz "\n"
+
+.text
+main:
+lui $a3, 4096 # We are going to save inputs to the start of the user data segment
+li $a2 8
+sw $a2 0($a3) # Save x
+li $a2 11
+sw $a2 4($a3) # Save y
+li $a2 17
+sw $a2 8($a3) # Save z
+li $a2 23
+sw $a2 12($a3) # Save w
+
+#Load variables from memory
+    la $a3, x
+    lw $t0, 0($a3)
+    lw $t1, 4($a3)
+    lw $t2, 8($a3)
+    lw $t3, 12($a3) 
+
+    # Compute exp_1 = (8 % w) - (x * z)
+    li $t6, 8
+    div $t3, $t6
+    mfhi $t4
+    mul $t5, $t0, $t2 
+    sub $a1, $t4, $t5 
+
+    # Compute exp_2 = ((y % z) * 4) + ((w - x) / 2)
+    div $t1, $t2
+    mfhi $t6
+    li $t7, 4
+    mul $t6, $t6, $t7 
+    sub $t8, $t3, $t0 
+    sra $t8, $t8, 1
+    add $a2, $t6, $t8
+
+##### Start of diagnostics
+la $a0,Prompt1
+li $v0,4
+syscall
+
+li $v0 1
+move $a0 $a1
+syscall # print $a1
+
+la $a0,Prompt2
+li $v0 4
+syscall
+
+li $v0 1
+move $a0 $a2
+syscall # print $a2
+
+la $a0, Return
+li $v0 4
+syscall
+
+li $v0 10
+syscall # exit
+#End of program
