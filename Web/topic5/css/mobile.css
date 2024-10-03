@@ -1,0 +1,45 @@
+@media screen and (max-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "academicInterests"
+            "article"
+            "hobbies"
+            "links"
+            "skills"
+            "education"
+            "Movies"
+            "footer";
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto; 
+    }
+
+    header, #academicInterests, #article, #hobbies, #links, #skills, #education, #Movies, footer {
+        padding: 0.5em; 
+    }
+
+    .profile-image {
+        width: 100%; 
+        height: auto; 
+    }
+
+    .skill-image {
+        width: 50%; 
+        height: auto; 
+        margin: 0 auto; 
+    }
+
+    .skillContainer {
+        display: flex;
+        flex-direction: column; 
+    }
+
+    #headerLinks a, #headerLinks ul li {
+        margin-right: 0.5em; 
+    }
+
+    #headerLinks, #headerLinks h1, #article, #hobbies ol, #Movies ol, #education ul {
+        font-size: smaller;
+    }
+}

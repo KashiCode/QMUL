@@ -1,0 +1,14 @@
+/* printing stylesheet */
+@media print {
+    #cool, .shiny {
+        background-color: silver;
+    }
+
+    a:hover {
+        background-color: silver;
+    }
+
+    ul a {
+        color: orange;
+    }
+}

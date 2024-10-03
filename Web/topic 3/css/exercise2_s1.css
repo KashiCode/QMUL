@@ -1,0 +1,10 @@
+@import url('exercise2_s2.css');
+
+/* Non-persistent and preferred style sheet */
+div {
+    background-color: silver;
+}
+
+strong {
+    font-size: 24pt;
+}

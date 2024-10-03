@@ -1,0 +1,7 @@
+@import url('exercise2_s3.css');
+
+/* Alternative style sheet */
+p, ul {
+    background-color: green;
+    font-size: 24pt;
+}

@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d2d2d2;
+}
+
+header {
+    text-align: center;
+    margin: 1em 0;
+}
+
+article {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.attraction {
+    display: flex;
+    margin-bottom: 2em;
+}
+
+.image-container {
+    position: relative;
+    width: 50%;
+}
+
+.main-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.award-image {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 20%;
+}
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    color: #fff;
+    text-align: center;
+    padding: 0.5em;
+}
+
+.content {
+    width: 50%;
+    padding-left: 1em;
+}
+
+.content h2 {
+    margin-top: 0;
+}
+
+footer {
+    background-color: #000000;
+    padding: 1em;
+    text-align: center;
+    color: #fff;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1em;
+}
+
+.about-me, .related-posts {
+    width: 50%;
+}
+
+.related-posts a:hover {
+    color: green;
+}

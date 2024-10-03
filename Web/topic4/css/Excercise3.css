@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #fff;
+}
+
+table {
+    width: 60%;
+    margin: 2.5% auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+caption {
+    background-color: #ff1493; 
+    color: white;
+    font-size: 2.4vw;
+    font-weight: bold;
+    padding: 1vw;
+}
+
+thead th {
+    background-color: #ffb6c1; 
+    color: white;
+    padding: 1vw;
+}
+
+tbody td {
+    padding: 1vw;
+    border: 0.1vw solid #ddd;
+}
+
+tbody .next-month, .prev-month {
+    color: #ff1493; 
+}
+
+tfoot {
+    background-color: #ffb6c1; 
+    color: white;
+}
+
+tfoot td {
+    padding: 1vw;
+}
+
+tbody .current-day {
+    background-color: #ff1493; 
+    color: white;
+}
+
+tfoot .next-month {
+    text-align: center;
+    font-weight: bold;
+}
+
+.prev-month {
+    color: #999; 
+}
+
+.current-day {
+    background-color: #ff1493; 
+    color: white;
+}

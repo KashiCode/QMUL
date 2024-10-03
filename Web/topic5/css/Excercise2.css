@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&family=Staatliches&family=Play:wght@400;700&display=swap');
+
+
+body {
+    font-family: "Quicksand", sans-serif;
+    background-color: #E7E8D1;
+    padding: 0.5em;    
+}
+
+.container {
+    min-height: 100%;
+    display: grid;
+    grid-template-areas:
+        "header header header header header"
+        "academicInterests article article article hobbies"
+        "links article article article Movies"
+        "skills education education education Movies"
+        "footer blank blank blank blank";
+
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 0.1fr 0.4fr 1fr 0.6fr 0.1fr;
+    grid-gap: 0.5em;
+}
+
+.profile-image {
+    width: 250px; 
+    height: 300px; 
+    object-fit: cover; 
+    border-radius: 20%;
+    border: 4px solid #fff; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    display: block; 
+    margin: 0 auto; 
+}
+
+
+.skillContainer {
+    min-height: 60%;
+    display: grid;
+    grid-template-areas:
+        "image1 text1"
+        "image2 text2"
+        "image3 text3";
+
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 0.5em;
+
+    background-color: #545f57;
+    padding: 0.5em;
+}
+
+#image1 {
+    grid-area: image1;
+}
+
+#text1 {
+    grid-area: text1;
+}
+
+#image2 {
+    grid-area: image2;
+}
+
+#text2 {
+    grid-area: text2;
+}
+
+#image3 {
+    grid-area: image3;
+}
+
+#text3 {
+    grid-area: text3;
+}
+
+.item {
+    padding: 0.5em;
+
+}
+
+header {
+    font-family: 'Play', sans-serif;
+    grid-area: header;
+    background-color: #00AF31;
+    color: #ffffff; 
+    padding: 1em;
+    margin-bottom: 0.4em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#headerLinks {
+    display: flex; 
+    width: 100%; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+#headerLinks a {
+    color: #ffffff; 
+    font-family: "Quicksand", sans-serif; 
+    text-decoration: none; 
+    margin-right: 1em; 
+}
+
+#headerLinks a:hover {
+    color: #545f57; 
+}
+
+#headerLinks h1 {
+    margin: 0; 
+    font-size: 1.5em; 
+    font-family: 'Staatliches', sans-serif; 
+}
+
+#headerLinks ul {
+    list-style-type: none; 
+    display: flex; 
+    margin: 0; 
+    padding: 0; 
+}
+
+#headerLinks ul li {
+    margin-right: 20px; 
+}
+
+#headerLinks ul li:last-child {
+    margin-right: 0; 
+}
+
+
+#blank {
+    grid-area: blank;
+}
+
+#academicInterests {
+    grid-area: academicInterests;
+
+    background-color: orange;
+
+    line-height: 1.5em;
+
+}
+
+#academicInterests h1 { 
+
+    font-family: 'Staatliches', sans-serif;
+    font-weight: 600;
+    color: #000;
+
+}
+
+#article {
+    grid-area: article;
+
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+
+#hobbies {
+    grid-area: hobbies;
+
+    background-color: #dedede96;
+
+
+}
+
+#hobbies h1 { 
+
+    font-family: 'Play', sans-serif;
+
+    font-weight: 800;
+    background-color: #00AF31;
+    padding: 0.6em;
+    text-align: center;
+    color: #ffffff;
+
+}
+
+#hobbies ol {
+
+    background-color: #E7E8D1;
+    padding: 0.2em 0.6em 0.2em 0.6em; 
+    line-height: 1.5em;
+
+
+}
+
+#links {
+    grid-area: links;
+
+    background-color: #dedede96;
+    color: #333;
+    border: 1px solid #d6d4d4;
+
+    line-height: 1.5em;
+
+    margin-top: 1.3em;
+    height: 9em;
+
+}
+
+#links ul {
+
+    align-items: center;
+
+}
+
+a:hover {
+    color: #A7BEAE;
+}
+
+#Movies {
+    grid-area: Movies;
+
+    line-height: 1.5em;
+    background-color: #dedede96;
+
+    height: 10.6em;
+    margin-top: 1em;
+
+}
+
+#Movies h1 { 
+
+    font-family: 'Play', sans-serif;
+
+    font-weight: 800;
+    background-color: #00AF31;
+    padding: 0.6em;
+    text-align: center;
+    color: #ffffff;
+
+}
+
+#Movies ol {
+
+    background-color: #E7E8D1;
+    padding: 0.2em 0.6em 0.2em 0.6em; 
+
+}
+
+#skills {
+    grid-area: skills;
+
+    background-color: #dedede96;
+
+}
+
+#skills h1 { 
+
+    font-family: 'Quicksand', sans-serif;
+
+    font-weight: 800;
+    background-color: #333;
+    padding: 0.6em;
+    text-align: center;
+    color: #ffffff;
+
+}
+
+
+.skill-image {
+
+    margin-top: 0.5em;
+    width: 80%; 
+    height: auto; 
+
+}
+
+
+
+#education {
+    grid-area: education;
+
+}
+
+#education h1 { 
+
+    font-family: 'Quicksand', sans-serif;
+
+    font-weight: 800;
+
+}
+
+#education ul {
+
+    line-height: 1.5em;
+}
+
+footer {
+    grid-area: footer;
+
+    background-color: #333;
+    font-size: 0.8rem;
+    color: #fff;
+
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 0.8em;
+}
+
+

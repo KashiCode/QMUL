@@ -1,0 +1,143 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 2rem;
+  }
+  
+  /* Style of the title box  */
+h1 {
+    background-color: #00C136; 
+    padding: 1rem 2rem; 
+    text-align: center; 
+    border-radius: 0.5rem;
+    box-shadow: 0 0.625rem 2.5rem rgba(0, 0, 0, 0.1);
+    width: fit-content; 
+    margin: auto; 
+    position: relative; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    z-index: 2; 
+  }
+  
+   /* Style of the form itself */
+  form {
+    background-color:#00C136; 
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.625rem 2.5rem rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    width: 50rem; 
+    margin: 0 auto; 
+    position: relative; 
+    z-index: 1; 
+  }
+  
+  
+  /* Style form fieldsets */
+  fieldset {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Style form legend */
+  legend {
+    padding: 0 0.5rem;
+    font-weight: bold;
+  }
+  
+  /* Style labels */
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Style input fields */
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="date"],
+  input[type="color"],
+  input[type="number"],
+  select {
+    width: 100%;
+    padding: 0.625rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 0.4rem;
+    box-sizing: border-box;
+  }
+  
+  /* Style input type radio and checkbox */
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  /* Style the submit and reset buttons */
+  input[type="submit"],
+  input[type="reset"] {
+    background-color: #007bff; 
+    color: white;
+    padding: 0.625rem 1.25rem;
+    border: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-right: 0.5rem; 
+    transition: background-color 0.3s ease; 
+  }
+  
+  /* Change background color on hover for submit button */
+  input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Style for the reset button */
+  input[type="reset"] {
+    background-color: #dc3545; 
+  }
+  
+  /* Change background color on hover for reset button */
+  input[type="reset"]:hover {
+    background-color: #bd2130;
+  }
+  
+  /* Placeholder styling */
+  ::placeholder {
+    color: #aaa;
+  }
+  
+  /* Focus styles */
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="tel"]:focus,
+  input[type="date"]:focus,
+  input[type="number"]:focus,
+  input[type="color"]:focus,
+  select:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    form {
+      width: 90%;
+      padding: 1rem;
+    }
+  
+    body {
+      padding: 1rem;
+    }
+  
+    input[type="submit"],
+    input[type="reset"] {
+      padding: 0.5rem 1rem;
+      width: 100%; 
+      margin: 0.5rem 0; 
+    }
+  }
+  

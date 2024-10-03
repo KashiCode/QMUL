@@ -1,0 +1,57 @@
+/* exercise1.css */
+body {
+    font-family: Arial, sans-serif;
+    background: #e6e6e6;
+}
+
+table {
+    width: 60%;
+    margin: 40px auto;
+    border-collapse: collapse;
+    border: 1px solid #999;
+    background: #fff;
+}
+
+caption {
+    margin-bottom: 10px;
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    background-color: green;
+    border-bottom: 1px solid #999;
+}
+
+thead th {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-bottom: 2px solid #666;
+}
+
+tbody th, tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr.undergraduate th {
+    background-color: #d9ead3;
+}
+
+tbody tr.postgraduate th {
+    background-color: #c9daf8;
+}
+
+tfoot {
+    font-weight: bold;
+    background-color: #f9f9f9;
+}
+
+tfoot th {
+    text-align: left;
+    border-top: 2px solid #666;
+}
+
+tfoot td {
+    text-align: center;
+    border-top: 2px solid #666;
+}
